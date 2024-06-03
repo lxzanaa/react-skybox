@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+body {
+    overflow-x: hidden;
+    font-family: 'comfortaa' sans-serif;
+
+}
+
+.comfortaa {
+    font-family: "Comfortaa", sans-serif;
+}
+
+.letter__spacing {
+    letter-spacing: 26px;
+}
+
+.card_shadow {
+    box-shadow: 0 13px 27px 0 rgba(0, 0, 0, 0.1);
+}
+
+.gradient_btn {
+    background: linear-gradient(90deg, #43A1D6 0%, #907EFF 100%);
+}
+
+.spacing_2 {
+    letter-spacing: 0.91em;
+}
+
+.spacing_title {
+    letter-spacing: 0.32em;
+}
+
+.max-h-0 {
+    max-height: 0;
+}
+
+.max-h-full {
+    max-height: 500px;
+}
+
+.transition-max-height {
+    transition: all 0.3s ease;
+}
+
+.faq-gradient {
+    background: linear-gradient(90deg, #b2e3ff 0%, #dfbfff 100%);
+}
+
+.faq-gradient_2 {
+    background: linear-gradient(90deg, #b2e3ff 0%, #dfbfff 100%);
+}
+
+.spacing__text {
+    letter-spacing: 0.35em;
+}
