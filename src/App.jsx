@@ -98,11 +98,15 @@ function App() {
                 <li key={item.id} className="flex items-center justify-between bg-[#ffebb3] rounded-full px-6 py-3">
                   <input
                     type="checkbox"
+                    id={item.id}
                     checked={item.checked}
                     onChange={() => handleCheckItem(item.id)}
                     className="mr-3"
                   />
-                  <label className={`font-bold text-lg text-[#5a3e2b] ${item.checked ? 'line-through' : ''}`}>
+                  <label
+                    htmlFor={item.id}
+                    className={`font-bold text-lg text-[#5a3e2b] ${item.checked ? 'line-through' : ''}`}
+                  >
                     {item.quantity} {item.text}
                   </label>
                   <button
@@ -113,6 +117,7 @@ function App() {
                   </button>
                 </li>
               ))}
+
             </ul>
           )}
           <div className="flex gap-5 justify-center mt-auto pt-4">
